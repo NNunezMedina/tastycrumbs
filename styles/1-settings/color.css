@@ -1,0 +1,11 @@
+:root {
+    /* Base Colors */
+    --white: hsl(0 0% 100%);
+
+    --red-100: rgb(239,9,9);
+
+    /* Color Tokens */
+  --background: var(--white);
+  --primary: var(--red-100);
+
+}

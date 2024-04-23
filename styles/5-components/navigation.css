@@ -1,0 +1,19 @@
+/* <nav class="header__navigation navigation">
+            <ul>
+                <li><a href="#"></a>PRODUCTOS</li>
+                <li><a href="#"></a>SOBRE NOSOTROS</li>
+                <li><a href="#"></a>CONTACTO</li>
+            </ul>
+        </nav> */
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    justify-content: flex-end;
+}
+
+.navigation a {
+    display: block;
+
+}

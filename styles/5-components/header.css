@@ -1,0 +1,72 @@
+/* <header class="header container">
+<h1 class="header__logo"><a href="/index.html">Tasty Crumbs</a></h1>
+<nav class="header__navigation navigation">
+    <ul>
+        <li><a href="#"></a>PRODUCTOS</li>
+        <li><a href="#"></a>SOBRE NOSOTROS</li>
+        <li><a href="#"></a>CONTACTO</li>
+    </ul>
+</nav>
+<div class="header__actions">
+    <button class="button button--sm">ORDENA AQUI</button>
+</div>
+<button class="header__menu-icon button button--icon button--outline">
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+  >
+    <path
+      d="M2.66663 8H13.3333M2.66663 4H13.3333M2.66663 12H13.3333"
+      stroke="currentColor"
+      stroke-width="1.33"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+</button>
+</header> */
+
+.header {
+  width: calc(100% - 96px); /* Restar el doble del margen */
+  height: var(--spacing-24);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  background-color: var(--background);
+  margin: 0 48px; /* Agregar margen a los lados */
+  position: sticky;
+  top: 0;
+}
+
+.header__logo a {
+  text-decoration: none;
+  color: var(--primary);
+  font-family: var(--display);
+  letter-spacing: var(--tracking-xl);
+  font-size: var(--font-4xl);
+  line-height: var(--leading-none);
+}
+
+.header__navigation {
+  display: none;
+  flex-grow: 1;
+}
+
+.header__actions {
+  display: none;
+}
+
+@media (min-width: 40rem) {
+  .header__navigation,
+  .header__actions {
+    display: block;
+  }
+
+  .header__menu-icon {
+    display: none;
+  }
+}
