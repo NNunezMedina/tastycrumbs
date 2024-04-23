@@ -7,6 +7,9 @@
 @import url(1-settings/color.css);
 @import url(1-settings/typography.css);
 
+/* 2. Generic */
+@import url(2-generic/reset.css);
+
 
 /* 5. Components */
 @import url(5-components/header.css);
