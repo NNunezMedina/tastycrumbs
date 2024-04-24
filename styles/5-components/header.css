@@ -30,15 +30,14 @@
 </header> */
 
 .header {
-  width: calc(100% - 96px); /* Restar el doble del margen */
+  width: 100%; /* Ocupar todo el ancho */
   height: var(--spacing-24);
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 32px;
   background-color: var(--background);
-  margin: 0 48px; /* Agregar margen a los lados */
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 
@@ -49,6 +48,7 @@
   letter-spacing: var(--tracking-xl);
   font-size: var(--font-4xl);
   line-height: var(--leading-none);
+  padding-left: 48px;
 }
 
 .header__navigation {
@@ -58,6 +58,11 @@
 
 .header__actions {
   display: none;
+  padding-right: 48px;
+}
+
+.header__menu-icon {
+  margin-right: 48px; 
 }
 
 @media (min-width: 40rem) {

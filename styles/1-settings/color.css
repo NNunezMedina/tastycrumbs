@@ -3,9 +3,11 @@
     --white: hsl(0 0% 100%);
 
     --red-100: rgb(239,9,9);
+    --red-200: rgb(137,37,51);
 
     /* Color Tokens */
   --background: var(--white);
   --primary: var(--red-100);
+  --primary-hover: var(--red-200);
 
 }

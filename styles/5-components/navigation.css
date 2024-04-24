@@ -15,5 +15,28 @@
 
 .navigation a {
     display: block;
+    text-decoration: none;
+    
+    color: var(--primary);
+    font-size: var(--font-base);
+    font-family: var(--subtitles);
+}
 
+.underline-effect {
+    position: relative;
+}
+
+.underline-effect::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: width 1s ease;
+}
+
+.underline-effect:hover::after {
+    width: 100%; 
 }

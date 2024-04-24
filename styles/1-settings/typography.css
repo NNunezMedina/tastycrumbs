@@ -1,7 +1,8 @@
 :root {
     /* Font stacks */
-    --text:  "Fjalla One", sans-serif;
+    --titles:  "Fjalla One", sans-serif;
     --display: "Six Caps", sans-serif;
+    --subtitles: "Fira Sans", sans-serif;
 
       /* Sizes */
   --font-xs: 0.75rem;
